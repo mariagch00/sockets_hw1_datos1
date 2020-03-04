@@ -9,7 +9,7 @@ public class SocketClient {
         Socket client = new Socket("127.0.0.1", 40000);
         OutputStreamWriter writer= new OutputStreamWriter(client.getOutputStream());
         writer.write("Hola\n");
-        writer.flush;
+        writer.flush();
         client.close();
 
     }
